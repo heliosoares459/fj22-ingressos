@@ -33,7 +33,7 @@ public class LugarController {
 
         lugarDto.setSalaId(salaId);
 
-        ModelAndView view = new ModelAndView("lugar/lugar");
+        ModelAndView view = new ModelAndView("sessao/sessao");
 
         view.addObject("lugarDto", lugarDto);
 
