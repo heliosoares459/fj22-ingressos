@@ -1,6 +1,5 @@
 package br.com.caelum.ingresso.dao;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.EntityManager;

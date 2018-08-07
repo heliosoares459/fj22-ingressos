@@ -1,12 +1,12 @@
 package br.com.caelum.ingresso.validation;
 
+import java.math.BigDecimal;
 import java.time.Duration;
 import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.aspectj.lang.annotation.Before;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -26,8 +26,8 @@ public class GerenciadorDeSessoesTests {
 		// simulacao do cenario
 		sessoes = Collections.emptyList();
 		horario = LocalTime.of(10,0);
-		sala = new Sala("Teste JUnit");
-		filme = new Filme("Prince of Persia The Sands of Time",Duration.ofMinutes(120), "Ação/Aventura");
+		sala = new Sala("Teste JUnit", new BigDecimal("10.0"));
+		filme = new Filme("Prince of Persia The Sands of Time",Duration.ofMinutes(120), "Ação/Aventura", new BigDecimal("10.0"));
 		sessaoNova = new Sessao(filme, sala, horario);
 	}
 	
