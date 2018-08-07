@@ -56,4 +56,8 @@ public class Sessao {
 		this.horario = horario;
 	}
 	
+	public LocalTime getHorarioTermino(){
+		return this.horario.plusMinutes(this.filme.getDuracao().toMinutes());
+	}
+	
 }
